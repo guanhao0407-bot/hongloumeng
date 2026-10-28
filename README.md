@@ -2,14 +2,16 @@
 
 面向高中语文整本书阅读，帮助教师和学生整理阅读疑问、关联文本与问题、展开递进追问，并依据学习反馈修订问题链。
 
+技能标识为 `dream-of-the-red-chamber-question-chain`，其中 *Dream of the Red Chamber* 是《红楼梦》的英文书名。项目原使用 `hongloumeng-question-chain`；安装新版后，可按平台说明停用或移除旧版，避免重复加载。旧下载链接仍提供新版安装包。
+
 ## 下载与使用
 
-- [下载 Codex／通用 Agent Skills 版](https://github.com/guanhao0407-bot/hongloumeng/raw/refs/heads/main/downloads/hongloumeng-question-chain-open-source.zip)
-- [下载 WorkBuddy 上传版](https://github.com/guanhao0407-bot/hongloumeng/raw/refs/heads/main/downloads/hongloumeng-question-chain-workbuddy.zip)
-- [阅读完整使用说明](skills/hongloumeng-question-chain/README.md)
-- [查看技能说明和源文件](skills/hongloumeng-question-chain/SKILL.md)
+- [下载 Codex／通用 Agent Skills 版](https://github.com/guanhao0407-bot/hongloumeng/raw/refs/heads/main/downloads/dream-of-the-red-chamber-question-chain-open-source.zip)
+- [下载 WorkBuddy 上传版](https://github.com/guanhao0407-bot/hongloumeng/raw/refs/heads/main/downloads/dream-of-the-red-chamber-question-chain-workbuddy.zip)
+- [阅读完整使用说明](skills/dream-of-the-red-chamber-question-chain/README.md)
+- [查看技能说明和源文件](skills/dream-of-the-red-chamber-question-chain/SKILL.md)
 
-Codex：解压通用版后，将整个 `hongloumeng-question-chain` 文件夹复制到项目的 `.agents/skills/`，在新会话中请求使用 `$hongloumeng-question-chain`。也可以在 Codex 中使用内置 `$skill-installer`，提供本仓库地址和目录 `skills/hongloumeng-question-chain`。具体步骤与限制见完整使用说明。
+Codex：解压通用版后，将整个 `dream-of-the-red-chamber-question-chain` 文件夹复制到项目的 `.agents/skills/`，在新会话中请求使用 `$dream-of-the-red-chamber-question-chain`。也可以在 Codex 中使用内置 `$skill-installer`，提供本仓库地址和目录 `skills/dream-of-the-red-chamber-question-chain`。具体步骤与限制见完整使用说明。
 
 WorkBuddy：下载上传版 ZIP，在“专家·技能·连接器 → 技能 → 添加技能 → 上传技能”中选择该文件。上传版按照 WorkBuddy 开放平台文档补充了展示字段；尚未在 WorkBuddy 客户端完成实际导入与对话验证，界面及支持情况以使用者的版本为准。
 
@@ -28,7 +30,9 @@ WorkBuddy：下载上传版 ZIP，在“专家·技能·连接器 → 技能 →
 
 本仓库不包含原著、第三方文献全文或学生资料。使用者可以自行提供有权使用的《红楼梦》文本或匿名阅读记录；EPUB本地检索工具支持部分目录格式，检索结果需回书核验。不同版本和阅读进度会影响可讨论内容。使用学生资料前，请按学校及研究机构的要求处理身份信息。
 
-技能是工作流程文件，依托使用环境已有的AI模型；不会自动采集课堂数据，也不会自行训练模型。本项目已经进行软件检查与设计者手动模拟，尚无独立教师测评或真实课堂效果验证；详情见[测试说明](skills/hongloumeng-question-chain/tests/行为评估.md)。
+已在本地工作区提供原著的用户，可以登记本地路径，让技能在当前环境具备访问权限时直接读取；公开包没有该私人路径或原书文件。具体做法见完整使用说明。
+
+技能是工作流程文件，依托使用环境已有的AI模型；不会自动采集课堂数据，也不会自行训练模型。本项目已经进行软件检查与设计者手动模拟，尚无独立教师测评或真实课堂效果验证；详情见[测试说明](skills/dream-of-the-red-chamber-question-chain/tests/行为评估.md)。
 
 ## 许可
 

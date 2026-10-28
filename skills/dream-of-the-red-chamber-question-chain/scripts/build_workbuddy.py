@@ -8,13 +8,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 HEADER = '''---
-name: hongloumeng-question-chain
+name: dream-of-the-red-chamber-question-chain
 display_name: 红楼梦整本书阅读问题链建构
 display_name_en: Dream of the Red Chamber Inquiry Chains
 description: 为《红楼梦》整本书阅读教学整理学生疑问、建构或诊断问题链、设计递进追问，并依据阅读反馈调整问题。
 description_zh: 围绕学生疑问、文本联系、递进追问和学习反馈辅助建构《红楼梦》阅读问题链。
 description_en: Support inquiry chains for reading Dream of the Red Chamber using student questions, textual evidence, follow-up prompts, and feedback.
-version: 1.0.0
+version: 1.1.0
 author: Project contributors
 ---
 '''
@@ -29,7 +29,7 @@ def main():
         parser.error('output must be outside the skill directory')
     entry = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
     match = re.match(r'\A---\s*\n.*?\n---\s*\n', entry, re.S)
-    if not match or 'name: hongloumeng-question-chain' not in match.group():
+    if not match or 'name: dream-of-the-red-chamber-question-chain' not in match.group():
         raise ValueError('Unexpected standard skill frontmatter')
     replacement = HEADER + entry[match.end():]
     files = []
